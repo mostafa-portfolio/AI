@@ -10,6 +10,7 @@
 
 body{
   background: url('assets/cover4.png');  
+  background-color: #050505;
   font-family: 'Roboto', sans-serif;
   color: white;
 }
@@ -94,7 +95,8 @@ p,ul,li{
 }
 #form input , #form button{
   border: none;
-  border-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 #form input{
   font-size: 17px;
@@ -110,11 +112,14 @@ p,ul,li{
   cursor: pointer;
   padding-left: 2rem;
   padding-right: 2rem;
-  border: 1px solid #818589;
+  border-left: 1px solid hsl(0, 0%, 22%);
 }
 
 #form button:hover{
   background-color: darkgrey  ;
+}
+#form button:focus{
+  background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
 }
 #form input::placeholder{
   color: hsl(0, 0%, 98%);
@@ -127,7 +132,7 @@ p,ul,li{
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-  border-right: 1px solid #818589;
+  border-right: 1px solid hsl(0, 0%, 22%);
   padding-right: 1em;
 }
 

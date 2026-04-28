@@ -1,5 +1,4 @@
 export function textGen(text,setState,status) {
-    console.log(import.meta.env.VITE_API_KEY)
 
     async function query(data) {
         const config = {
@@ -36,7 +35,7 @@ export function textGen(text,setState,status) {
         ],
         model: "MiniMaxAI/MiniMax-M2.7:novita",
     }).then((response) => {
-        if(response===true){
+        if(response){
             setState(response.choices[0].message.content)
         }
         else if(status==="abort"){
