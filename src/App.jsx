@@ -12,24 +12,14 @@ function App() {
   const [question,setQuestion]=useState('')
   const search= useRef(null)
 
-  const loaderHtml=!state&&loader?<span className="loader"></span>:null
-
-
-
-  /* useEffect(searchFocus,[state]) */
-
-  function searchFocus(){
-    search.current.focus()
-  }
-
   function reset(){
     setState('')
     setQuestion('')
     setLoader(false)
     textGen(undefined,setState,"abort")
-    searchFocus()
-    /* window.location.reload() */
   }
+
+  const loaderHtml=!state&&loader?<span className="loader"></span>:null
   
   return (
     <>

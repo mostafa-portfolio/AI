@@ -4,6 +4,7 @@ export function textGen(text,setState,status) {
         const config = {
             API_KEY: import.meta.env.VITE_API_KEY
         }
+        
         try{
             const response = await fetch(
             "https://router.huggingface.co/v1/chat/completions",

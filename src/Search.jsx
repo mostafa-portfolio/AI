@@ -6,7 +6,7 @@ export default function Search({props}){
 
 
     function handleSubmit(formData){
-
+        props.setState(false)
         const text= formData.get("text")
         if(text){
             props.setQuestion(text)
@@ -14,7 +14,6 @@ export default function Search({props}){
             if(!props.state){
                 props.setLoader(true)
             }
-            props.search.current.focus()
         }
     }
 
