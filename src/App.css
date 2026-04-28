@@ -111,6 +111,7 @@ p,ul,li{
   cursor: pointer;
   padding-left: 2rem;
   padding-right: 2rem;
+  border: 1px solid #818589;
 }
 
 #form button:hover{
