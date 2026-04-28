@@ -54,7 +54,7 @@ p,ul,li{
   color: hsl(0, 0%, 98%);
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  margin-top: 27dvh;
+  margin-top: 27svh;
   transition: 1s ease;
   /* transition: 1s ease-in-out */;
 }
@@ -248,7 +248,7 @@ p,ul,li{
 
 @media screen and (max-width: 700px)  {
   .logo{
-    margin-top: 29dvh;
+    margin-top: 29svh;
   }
   .logo-search-phase{
   margin-top: 7%;
@@ -269,7 +269,7 @@ p,ul,li{
 
 @media screen and (max-width: 500px)  {
   .logo{
-    margin-top: 11.5rem;
+    margin-top: 28svh;
   }
 }
 
