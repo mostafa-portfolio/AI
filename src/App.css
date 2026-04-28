@@ -2,7 +2,7 @@
 #root{
   max-width: 100%;
   text-align: center;
-  min-height: 97.5svh;
+  max-height: 97.5svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
