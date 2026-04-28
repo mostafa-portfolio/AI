@@ -2,7 +2,7 @@ export function textGen(text,setState,status) {
 
     async function query(data) {
         const config = {
-            API_KEY: import.meta.env.VITE_API_KEY
+            API_KEY: "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"
         }
         try{
             const response = await fetch(
