@@ -10,17 +10,21 @@ function App() {
   const [state,setState]=useState('')
   const [loader,setLoader]=useState(false)
   const [question,setQuestion]=useState('')
-  const search= useRef(null)
 
+  const abortControllerRef=useRef(null)
+  
   function reset(){
+    console.log(abortControllerRef.current)
+    if(abortControllerRef.current){
+      abortControllerRef.current.abort()
+    }
     setState('')
     setQuestion('')
     setLoader(false)
-    textGen(undefined,setState,"abort")
   }
 
   const loaderHtml=!state&&loader?<span className="loader"></span>:null
-  
+
   return (
     <>
       <Header state={state} loader={loader} reset={reset}/>
@@ -29,7 +33,7 @@ function App() {
         <div className='question-area'>{question}</div>
       </section>
       
-      <Search  props={{reset,search,state,loader,setLoader,setQuestion,setState}}/>
+      <Search  props={{abortControllerRef,reset,state,loader,setLoader,setQuestion,setState}}/>
 
       {loaderHtml}
       {/* AI Answer Area */}
