@@ -245,9 +245,11 @@ p,ul,li{
 /* Media Queries */
 
 
+
+
 @media screen and (max-width: 700px)  {
   .logo{
-    margin-top: 40%;
+    margin-top: 30%;
   }
   .logo-search-phase{
   margin-top: 7%;
@@ -266,6 +268,11 @@ p,ul,li{
   }
 }
 
+@media screen and (max-width: 500px)  {
+  .logo{
+    margin-top: 55%;
+  }
+}
 
 @media (min-width: 701px) and (max-width: 1000px)  {
   .search-form , .bottom{
