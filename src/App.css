@@ -2,7 +2,7 @@
 #root{
   max-width: 100%;
   text-align: center;
-  max-height: 97.5svh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -270,7 +270,7 @@ p,ul,li{
 
 @media screen and (max-width: 500px)  {
   .logo{
-    margin-top: 37vh;
+    margin-top: 28vh;
   }
 }
 
