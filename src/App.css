@@ -113,14 +113,19 @@ p,ul,li{
   padding-left: 2rem;
   padding-right: 2rem;
   border-left: 1px solid hsl(0, 0%, 22%);
+  -webkit-tap-highlight-color: transparent;
 }
 
-#form button:hover{
-  background-color: darkgrey  ;
+@media (hover: hover) {
+  #form button:hover {
+    background-color: darkgrey;
+  }
 }
-#form button:focus{
-  background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+
+#form button:active {
+  opacity: 0.8; 
 }
+
 #form input::placeholder{
   color: hsl(0, 0%, 98%);
   font-size: 1.1rem;
@@ -275,6 +280,9 @@ p,ul,li{
 @media screen and (max-width: 500px)  {
   .logo{
     margin-top: 28svh;
+  }
+  .logo-search-phase{
+  margin-top: 7%;
   }
 }
 
