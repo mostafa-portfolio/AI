@@ -10,7 +10,7 @@ function App() {
   const [state,setState]=useState('')
   const [loader,setLoader]=useState(false)
   const [question,setQuestion]=useState('')
-  console.log(state)
+  
   const abortControllerRef=useRef(null)
   
   function reset(){

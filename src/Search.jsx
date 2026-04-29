@@ -7,8 +7,10 @@ export default function Search({props}){
 
     function handleSubmit(formData){
         props.abortControllerRef.current=new AbortController()
-        props.abortControllerRef.current.abort()
-        setState('')
+        if(props.state){
+            props.setState('')
+        }
+        
         const text= formData.get("text")
         if(text){
             props.setLoader(true)
