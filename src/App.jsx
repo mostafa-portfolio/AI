@@ -14,7 +14,6 @@ function App() {
   const abortControllerRef=useRef(null)
   
   function reset(){
-    console.log(abortControllerRef.current)
     if(abortControllerRef.current){
       abortControllerRef.current.abort()
     }

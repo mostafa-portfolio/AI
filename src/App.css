@@ -64,7 +64,6 @@ p,ul,li{
   font-size: 2.3rem;
 }
 .logo-img{
-  width: 11%;
   width: 13%;
   margin-bottom: 2.3rem;
 }
@@ -274,17 +273,17 @@ p,ul,li{
   }
 
   .logo h1{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: -12px;
   }
   .logo-img{
-    width: 15%;
+    width: 13%;
     margin-bottom: 2.3rem;
   }
 
   .search-form , .bottom{
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 2.2rem;
     width: 90%;
   }
   .question-area-container{
