@@ -9,11 +9,9 @@ export default function Search({props}){
         props.abortControllerRef.current=new AbortController()
         const text= formData.get("text")
         if(text){
+            props.setLoader(true)
             props.setQuestion(text)
-            textGen(text,props.setState,props.abortControllerRef.current.signal)
-            if(!props.state){
-                props.setLoader(true)
-            }
+            textGen(text,props.setState,props.setLoader,props.abortControllerRef.current.signal)
         }
     }
 

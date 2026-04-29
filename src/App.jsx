@@ -10,7 +10,7 @@ function App() {
   const [state,setState]=useState('')
   const [loader,setLoader]=useState(false)
   const [question,setQuestion]=useState('')
-
+  console.log(state)
   const abortControllerRef=useRef(null)
   
   function reset(){
@@ -23,7 +23,7 @@ function App() {
     setLoader(false)
   }
 
-  const loaderHtml=!state&&loader?<span className="loader"></span>:null
+  const loaderHtml=loader?<span className="loader"></span>:null
 
   return (
     <>

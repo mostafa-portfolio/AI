@@ -1,4 +1,4 @@
-export function textGen(text,setState,signal) {
+export function textGen(text,setState,setLoader,signal) {
 
     async function query(data) {
         const config = {
@@ -49,6 +49,7 @@ export function textGen(text,setState,signal) {
             console.log(response)
             setState(response.choices[0].message.content)
         }
+        setLoader(false)
     })
 
 
