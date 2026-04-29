@@ -112,7 +112,9 @@ p,ul,li{
   cursor: pointer;
   padding-left: 2rem;
   padding-right: 2rem;
+  border-radius: 2rem;
   border-left: 1px solid #fcfcfc14;
+  
 }
 
 #new-chat{
