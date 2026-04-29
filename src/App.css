@@ -138,7 +138,7 @@ p,ul,li{
 -webkit-tap-highlight-color: transparent;
 }
 
-#form button:active #new-chat:active{
+#form button:active , #new-chat:active{
   opacity: 0.6; 
 }
 
